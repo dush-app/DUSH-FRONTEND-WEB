@@ -1,0 +1,408 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../public/Segoe\ UI.woff);
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.left {
+  width: 500px;
+  min-height: 100vh;
+  height: 100%;
+  padding: 3em 0 3em 2em;
+}
+.left h2 {
+  text-align: left;
+  font: italic normal 300 45px/60px "Segoe UI";
+  letter-spacing: 0.9px;
+}
+.left h2 span {
+  text-align: left;
+  font: normal normal normal 35px/40px "Segoe UI";
+  letter-spacing: 0.9px;
+}
+
+.left ul {
+  padding: 0;
+  margin: 0;
+}
+.left ul li {
+  list-style: none;
+  text-align: left;
+  font: normal normal 600 20px/25px "Segoe UI";
+  letter-spacing: 0.53px;
+  color: #000000;
+  margin-bottom: 2em;
+}
+
+.left ul .sign {
+  position: absolute;
+  bottom: 5%;
+}
+
+.mid {
+  width: calc(100% - 1050px);
+  height: 100%;
+  min-height: 100vh;
+  padding: 6em 0 0em;
+  position: relative;
+}
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.tittle {
+  text-align: center;
+  font: normal normal 600 30px/35px "Segoe UI";
+  letter-spacing: 0px;
+  color: #303030;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.active {
+  background: #000000 0% 0% no-repeat padding-box;
+  border-radius: 9px;
+  text-align: center;
+  padding: 10px;
+  font: normal normal 600 30px/35px "Segoe UI";
+  letter-spacing: 0px;
+  color: #ebf0f2;
+  transition: all 0.3s ease;
+}
+
+.cash {
+  width: 100%;
+  height: 100%;
+}
+.titl {
+  text-align: center;
+  margin: 1em 0 2em;
+}
+.cash h2 {
+  text-align: center;
+  font: italic normal 600 22px "Segoe UI";
+  letter-spacing: 0px;
+  color: #070a22;
+}
+.cash span {
+  text-align: center;
+  font: normal normal bold 40px Roboto;
+  letter-spacing: 1.4px;
+  color: #ea1d25;
+}
+.trans {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5em;
+}
+.transCap {
+  width: 138px;
+  height: 163px;
+  background: #000000 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 9px;
+  position: relative;
+}
+.transIcon {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.transCap p {
+  text-align: left;
+  font: normal normal 600 25px/33px "Segoe UI";
+  letter-spacing: 0px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+
+.amt {
+  display: inline-flex;
+  overflow: scroll;
+  align-items: center;
+  justify-content: unset;
+  gap: 2em;
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+}
+
+.amt img {
+  width: 400px;
+  height: 200px;
+  border-radius: 25px;
+}
+.amt::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+.amt::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Handle */
+.amt::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 0;
+}
+
+/* Handle on hover */
+.amt::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+.right {
+  width: 550px;
+  height: 100%;
+  min-height: 100vh;
+  padding: 6em 0 3em 1em;
+  position: relative;
+}
+
+.search {
+  width: 95%;
+  margin: 0 auto 3em;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  text-align: left;
+  font: normal normal 300 19px "Segoe UI";
+  letter-spacing: 0px;
+  color: #070a22;
+  opacity: 1;
+  border: none;
+  width: 90%;
+  height: 100%;
+}
+.searchIcon {
+  font-size: 30px;
+}
+
+.user {
+  display: inline-flex;
+  overflow: scroll;
+  align-items: center;
+  justify-content: unset;
+  gap: 2em;
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  width: 150px;
+}
+
+.info p {
+  width: 84px;
+  height: 84px;
+  background: #5fbed0 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 4px;
+}
+.info span {
+  text-align: center;
+  font: normal normal normal 16px "Segoe UI";
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+/* width */
+.user::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+.user::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Handle */
+.user::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 0;
+}
+
+/* Handle on hover */
+.user::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+.transa {
+  margin: 1em auto;
+  display: flex;
+  padding: 0 1em;
+  flex-direction: column;
+}
+
+.transa h2 {
+  text-align: left;
+  font: normal normal 300 20px "Segoe UI";
+  letter-spacing: 0px;
+  color: #070a22;
+  opacity: 1;
+  margin: 0 0 1em;
+}
+
+.tHis {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tHis h3 {
+  width: 50px;
+  height: 50px;
+  background: transparent linear-gradient(318deg, #00b3ff 0%, #81ecec 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 32px;
+  opacity: 0.98;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font: normal normal 600 16px "Segoe UI";
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.text p {
+  text-align: left;
+  font: normal normal bold 20px "Inter", sans-serif;
+  letter-spacing: 0px;
+  color: #1c1b1b;
+  margin: 0 0 4px;
+}
+.text span {
+  text-align: left;
+  font: normal normal normal 19px "Inter", sans-serif;
+  letter-spacing: 0px;
+  color: #575656;
+  margin: 0;
+}
+.tHis h6 {
+  text-align: right;
+  font: normal normal 600 20px/27px "Segoe UI";
+  letter-spacing: 0px;
+  color: #51a776;
+  opacity: 1;
+}
+
+.testi {
+  display: inline-flex;
+  overflow-x: scroll;
+  align-items: center;
+  justify-content: unset;
+  gap: 2em;
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  padding: 0 2em;
+}
+.tesCap {
+  background-color: #000000;
+  min-width: 400px;
+  height: 200px;
+  border-radius: 25px;
+}
+.tesCap p {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.tesCap h2 {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+.testi::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+.testi::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Handle */
+.testi::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 0;
+}
+
+/* Handle on hover */
+.testi::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+/* Notification styling */
+.rigNoti {
+  display: none;
+}
+
+/* @media (max-width: 1600px) {
+  .right {
+    width: 0;
+  }
+  .mid {
+    width: calc(100% - 400px);
+  }
+
+  .rigNoti {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    position: absolute;
+    top: 5%;
+    right: 1%;
+    background-color: red;
+    padding: 0.1em.4em;
+    transition: all 0.3s ease;
+  }
+  .rigNoti > p {
+    display: none;
+  }
+  .rigNoti:hover > p {
+    display: block;
+  }
+
+  .rigIcon {
+    font-size: 30px;
+  }
+
+  .rigNoti {
+    font-size: 16px;
+    color: white;
+  }
+} */
