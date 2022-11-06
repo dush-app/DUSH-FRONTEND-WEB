@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import style from "../styles/dash.module.css";
-import Cash from "../components/cash";
-import Crypto from "../components/crypto";
 import LeftBar from "../components/leftBar";
 import RightBar from "../components/rightBar";
+import style from "../styles/dep.module.css";
+import { useState } from "react";
+import SCash from "../components/cash/sCash";
+import Dcrypto from "../components/crypto/Dcrypto";
 
-const Dashboard = () => {
+const SendCash = () => {
   const [toggleState, SetToggleState] = useState(1);
   const toggleTab = (index: React.SetStateAction<number>) => {
     SetToggleState(index);
@@ -13,7 +13,7 @@ const Dashboard = () => {
 
   return (
     <div className={style.main}>
-     <LeftBar />
+      <LeftBar />
       <div className={style.mid}>
         <div className={style.option}>
           <span
@@ -38,7 +38,7 @@ const Dashboard = () => {
           </span>
         </div>
         <div className={style.cont}>
-          {toggleState === 1 ? <Cash /> : <Crypto />}
+          {toggleState === 1 ? <SCash /> : <Dcrypto />}
         </div>
       </div>
       <RightBar />
@@ -46,4 +46,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default SendCash;

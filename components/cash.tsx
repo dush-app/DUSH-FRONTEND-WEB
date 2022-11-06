@@ -1,6 +1,8 @@
 import React from "react";
 import style from "../styles/dash.module.css";
 import { BiPaperPlane } from "react-icons/bi";
+import { AiOutlinePlus } from "react-icons/ai";
+import { MdPayment } from "react-icons/md";
 
 const Cash = () => {
   return (
@@ -17,11 +19,11 @@ const Cash = () => {
           <p>Send</p>
         </div>
         <div className={style.transCap}>
-          <BiPaperPlane className={style.transIcon} />
+          <AiOutlinePlus className={style.transIcon} />
           <p>Deposit</p>
         </div>
         <div className={style.transCap}>
-          <BiPaperPlane className={style.transIcon} />
+          <MdPayment className={style.transIcon} />
           <p>Payment</p>
         </div>
       </div>

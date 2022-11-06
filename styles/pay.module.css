@@ -18,7 +18,7 @@
   width: calc(100% - 1050px);
   height: 100%;
   min-height: 100vh;
-  padding: 6em 0 0em;
+  padding: 2em 0 0em;
   position: relative;
 }
 .option {
@@ -28,7 +28,6 @@
   gap: 1em;
   margin-bottom: 2em;
 }
-
 .tittle {
   text-align: center;
   font: normal normal 600 30px/35px "Segoe UI";
@@ -102,18 +101,17 @@
 
 .info {
   width: 150px;
+  text-align: center;
 }
 
-.info p {
+.info img {
   width: 84px;
   height: 84px;
-  background: #5fbed0 0% 0% no-repeat padding-box;
-  opacity: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  margin: 0 0 4px;
+  margin: 0 auto 4px;
 }
 .info span {
   text-align: center;
@@ -143,16 +141,12 @@
 .user::-webkit-scrollbar-thumb:hover {
   background: #ffffff;
 }
-.transa {
-  margin: 1em auto;
-  display: flex;
-  padding: 0 1em;
-  flex-direction: column;
-}
-
-.dcash h5 {
-  font-size: 20px;
-  margin: 0 0 0.7em;
+.info span {
+  text-align: center;
+  font: normal normal normal 16px "Segoe UI";
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
 }
 
 .info h6 {
@@ -164,141 +158,74 @@
   margin: 0;
 }
 
-.tran {
-  margin: 2em 0 0;
+.pcash h5 {
+  font-size: 20px;
+  margin: 0 0 0.7em;
+}
+
+.trans {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1em;
 }
 .transCap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-  margin-bottom: 1.5em;
-}
-
-.transCap button {
-  background: #ffffff 0% 0% no-repeat padding-box;
+  width: 168px;
+  height: 230px;
+  background: #e7ecee 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
-  border-radius: 8px;
-  opacity: 1;
-  width: 250px;
-  height: 70px;
-  outline: none;
-  border: none;
-  text-align: left;
-  font: normal normal 600 25px Segoe UI;
-  letter-spacing: 0px;
-  color: #070a22;
-  opacity: 1;
+  border-radius: 9px;
+  position: relative;
 }
-
-.transCap input {
-  width: 300px;
-  height: 70px;
-  background: #f0f5f7 0% 0% no-repeat padding-box;
-  box-shadow: inset 0px 3px 6px #00000029;
-  border-radius: 8px;
-  opacity: 1;
+.transIcon {
+  color: #000;
+  font-size: 50px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.transCap p {
   text-align: left;
-  font: normal normal medium 35px/47px Inter;
+  font: normal normal 600 25px/33px "Segoe UI";
   letter-spacing: 0px;
   color: #000;
-  opacity: 1;
-  outline: none;
-  border: none;
-  padding: 0 0 0 1em;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
 }
-.card {
-  width: 300px;
-  height: 70px;
-  background: #f0f5f7 0% 0% no-repeat padding-box;
-  box-shadow: inset 0px 3px 6px #00000029;
-  border-radius: 8px;
-  opacity: 1;
-  display: flex;
+.amt {
+  display: inline-flex;
+  overflow: scroll;
   align-items: center;
-  justify-content: center;
-  justify-content: center;
-  gap: 1em;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  justify-content: unset;
+  gap: 2em;
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
 }
-/* width */
-.card::-webkit-scrollbar {
+
+.amt img {
+  width: 400px;
+  height: 200px;
+  border-radius: 25px;
+}
+.amt::-webkit-scrollbar {
   width: 0px;
-  height: 0px;
 }
 
 /* Track */
-.card::-webkit-scrollbar-track {
+.amt::-webkit-scrollbar-track {
   box-shadow: none;
   border-radius: 0;
 }
 
 /* Handle */
-.card::-webkit-scrollbar-thumb {
-  background: transparent;
+.amt::-webkit-scrollbar-thumb {
+  background: white;
   border-radius: 0;
 }
 
 /* Handle on hover */
-.card::-webkit-scrollbar-thumb:hover {
-  background: transparent;
-}
-.card img {
-  width: 105px;
-  height: 57px;
-  border-radius: 10px;
-}
-
-.con {
-  width: 300px;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-}
-.iccon {
-  width: 300px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.conCap {
-  font-size: 40px;
-  width: 30%;
-  margin-right: auto;
-}
-.iccon p {
-  text-align: left;
-  font: normal normal 600 25px Segoe UI;
-  letter-spacing: 0px;
-  color: #070a22;
-  opacity: 1;
-}
-
-.tb {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-}
-
-.lsBtn {
-  width: 60px;
-  height: 60px;
-  border: none;
-  outline: none;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: inset 0px 3px 6px #00000029;
-  border-radius: 33px;
-  opacity: 1;
-}
-.tb p {
-  margin: 0;
-  text-align: center;
-  font: normal normal 600 25px Segoe UI;
-  letter-spacing: 0px;
-  color: #070a22;
-  opacity: 1;
+.amt::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
 }

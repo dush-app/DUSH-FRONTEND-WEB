@@ -1,19 +1,24 @@
-import React, { useState } from "react";
-import style from "../styles/dash.module.css";
-import Cash from "../components/cash";
-import Crypto from "../components/crypto";
-import LeftBar from "../components/leftBar";
-import RightBar from "../components/rightBar";
+import React from 'react'
+import LeftBar from '../components/leftBar'
+import RightBar from '../components/rightBar'
+import style from '../styles/pay.module.css'
+import { useState } from 'react'
+import PCash from '../components/cash/pCash'
+import PCrypto from '../components/crypto/PCrypto'
 
-const Dashboard = () => {
-  const [toggleState, SetToggleState] = useState(1);
-  const toggleTab = (index: React.SetStateAction<number>) => {
-    SetToggleState(index);
-  };
+const Payment = () => {
+     const [toggleState, SetToggleState] = useState(1);
+     
+     const toggleTab = (index: React.SetStateAction<number>) => {
+       SetToggleState(index);
+     };
+
+
 
   return (
     <div className={style.main}>
-     <LeftBar />
+      <LeftBar />
+
       <div className={style.mid}>
         <div className={style.option}>
           <span
@@ -38,12 +43,13 @@ const Dashboard = () => {
           </span>
         </div>
         <div className={style.cont}>
-          {toggleState === 1 ? <Cash /> : <Crypto />}
+          {toggleState === 1 ? <PCash /> : <PCrypto />}
         </div>
       </div>
+
       <RightBar />
     </div>
   );
-};
+}
 
-export default Dashboard;
+export default Payment

@@ -1,13 +1,11 @@
-import React from 'react'
-import style from '../styles/dash.module.css'
-import { AiFillHome, AiOutlineHistory, AiOutlineSearch } from "react-icons/ai";
-import {
-  IoNotificationsOutline,
-  IoWallet,
-  IoSettingsOutline,
-} from "react-icons/io5";
+import React from "react";
+import style from "../styles/dash.module.css";
+import {  AiOutlineHistory } from "react-icons/ai";
+import { BsHouseDoor } from 'react-icons/bs'
+import { BiWallet } from "react-icons/bi";
+import { IoNotificationsOutline, IoSettingsOutline } from "react-icons/io5";
 import { GoSignOut } from "react-icons/go";
-
+import {GiHamburgerMenu } from 'react-icons/gi'
 
 const LeftBar = () => {
   return (
@@ -17,30 +15,34 @@ const LeftBar = () => {
       </h2>
 
       <ul>
-        <li>
-          <AiFillHome className={style.icon} /> Home
+        <li className={style.ham}>
+          <GiHamburgerMenu className={style.icon} />
         </li>
         <li>
-          <IoNotificationsOutline className={style.icon} /> Navigation
+          <BsHouseDoor className={style.icon} /> <span>Home</span>
         </li>
         <li>
-          <IoWallet className={style.icon} /> Wallet
+          <IoNotificationsOutline className={style.icon} />
+          <span>Navigation</span>
         </li>
         <li>
-          <AiFillHome className={style.icon} /> Invite friend
+          <BiWallet className={style.icon} /> <span>Wallet</span>
         </li>
         <li>
-          <IoSettingsOutline className={style.icon} /> Setting{" "}
+          <BsHouseDoor className={style.icon} /> <span>Invite friend</span>
         </li>
         <li>
-          <AiOutlineHistory /> History
+          <IoSettingsOutline className={style.icon} /> <span>Setting</span>
+        </li>
+        <li>
+          <AiOutlineHistory className={style.icon} /> <span>History</span>
         </li>
         <li className={style.sign}>
-          <GoSignOut /> Sign Out
+          <GoSignOut className={style.icon} /> <span>Sign Out</span>
         </li>
       </ul>
     </div>
   );
-}
+};
 
-export default LeftBar
+export default LeftBar;

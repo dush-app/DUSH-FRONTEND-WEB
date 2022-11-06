@@ -15,19 +15,19 @@
 }
 
 .left {
-  width: 500px;
+  width: 600px;
   min-height: 100vh;
   height: 100%;
   padding: 3em 0 3em 2em;
 }
 .left h2 {
   text-align: left;
-  font: italic normal 300 45px/60px "Segoe UI";
+  font: italic normal 300 45px "Segoe UI";
   letter-spacing: 0.9px;
 }
 .left h2 span {
   text-align: left;
-  font: normal normal normal 35px/40px "Segoe UI";
+  font: normal normal normal 35px "Segoe UI";
   letter-spacing: 0.9px;
 }
 
@@ -38,7 +38,7 @@
 .left ul li {
   list-style: none;
   text-align: left;
-  font: normal normal 600 20px/25px "Segoe UI";
+  font: normal normal 600 20px "Segoe UI";
   letter-spacing: 0.53px;
   color: #000000;
   margin-bottom: 2em;
@@ -50,7 +50,7 @@
 }
 
 .mid {
-  width: calc(100% - 1050px);
+  width: calc(100% - 1150px);
   height: 100%;
   min-height: 100vh;
   padding: 6em 0 0em;
@@ -106,12 +106,13 @@
 .trans {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2em;
   margin-top: 5em;
 }
 .transCap {
   width: 138px;
-  height: 163px;
+  height: 200px;
   background: #000000 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 9px;
@@ -119,7 +120,7 @@
 }
 .transIcon {
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
   position: absolute;
   top: 10%;
   left: 10%;
@@ -132,6 +133,9 @@
   position: absolute;
   bottom: 10%;
   left: 10%;
+}
+.icon {
+  cursor: pointer;
 }
 
 .amt {
@@ -364,45 +368,111 @@
 .testi::-webkit-scrollbar-thumb:hover {
   background: #ffffff;
 }
-
-/* Notification styling */
-.rigNoti {
+.ham {
   display: none;
 }
 
-/* @media (max-width: 1600px) {
+@media (max-width: 1600px) {
   .right {
     width: 0;
   }
   .mid {
+    width: calc(100% - 600px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .mid {
+    width: calc(100% - 500px);
+  }
+  .left {
+    width: 500px;
+  }
+}
+
+@media (max-width: 950px) {
+  .left {
+    width: 400px;
+    padding: 3em 0 3em 0.4em;
+  }
+  .mid {
     width: calc(100% - 400px);
   }
-
-  .rigNoti {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    position: absolute;
-    top: 5%;
-    right: 1%;
-    background-color: red;
-    padding: 0.1em.4em;
-    transition: all 0.3s ease;
+  .left h2 {
+    font-size: 25px;
   }
-  .rigNoti > p {
+  .left h2 span {
+    font-size: 23px;
+  }
+  .left ul {
+    margin-top: 4em;
+  }
+
+  .left ul li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 804px) {
+  .left {
+    width: 100px;
+    background-color: #f5f5f5;
+  }
+  .left h2 {
     display: none;
   }
-  .rigNoti:hover > p {
-    display: block;
+  .left ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left ul li .icon {
+    font-size: 30px;
+  }
+  .left ul li span {
+    display: none;
   }
 
-  .rigIcon {
+  .mid {
+    width: calc(100% - 100px);
+  }
+
+  .ham {
+    display: block;
+    position: absolute;
+    top: 5%;
     font-size: 30px;
   }
 
-  .rigNoti {
-    font-size: 16px;
-    color: white;
+
+}
+
+@media (max-width: 550px) {
+  .trans {
+    overflow-x: scroll;
   }
-} */
+  .transCap {
+    min-width: 130px;
+  }
+  .transCap::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+.transCap::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Handle */
+.transCap::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 0;
+}
+
+/* Handle on hover */
+.transCap::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+}

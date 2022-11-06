@@ -1,16 +1,16 @@
 import React from "react";
 import style from "../../styles/dep.module.css";
 import { BsArrowLeft } from "react-icons/bs";
-import { IoMdArrowDropdownCircle } from 'react-icons/io'
-import { AiOutlinePlus } from 'react-icons/ai'
+import { IoMdArrowDropdownCircle } from "react-icons/io";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
-const DCash = () => {
+const SCash = () => {
   return (
     <div className={style.dcash}>
       <div className={style.title}>
         <BsArrowLeft className={style.tIcon} />
 
-        <p>Deposit</p>
+        <p>Send</p>
       </div>
 
       <h5>Recent Deposite</h5>
@@ -66,8 +66,9 @@ const DCash = () => {
       <div className={style.tran}>
         <div className={style.transCap}>
           <button>Send Using</button>
-          <div className={style.con}>
+          <div className={style.iccon}>
             <IoMdArrowDropdownCircle className={style.conCap} />
+            <p>Phone Number</p>
           </div>
         </div>
         <div className={style.transCap}>
@@ -80,18 +81,23 @@ const DCash = () => {
         </div>
         <div className={style.transCap}>
           <button>Payment Channel</button>
-          <input type="text" placeholder="MTN MOMO" />
+          <div className={style.card}>
+            <img src="/airtel.png" alt="" />
+            <img src="/mtn.png" alt="" />
+            <img src="/pay.png" alt="" />
+            <img src="/visa.png" alt="" />
+          </div>
         </div>
 
         <div className={style.tb}>
+          <p>Send</p>
           <button className={style.lsBtn}>
-            <AiOutlinePlus className={style.conCap} />
+            <MdKeyboardArrowRight className={style.conCap} />
           </button>
-          <p>Deposite</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default DCash;
+export default SCash;
