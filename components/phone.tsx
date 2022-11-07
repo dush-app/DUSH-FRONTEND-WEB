@@ -1,5 +1,6 @@
 import React from 'react'
 import style from '../styles/sign.module.css'
+import Link from 'next/link';
 
 const Phone = () => {
   return (
@@ -24,12 +25,15 @@ const Phone = () => {
 
         <input type="text" placeholder="***********" />
       </div>
-
       <p className={style.cond}>
         I accept all the terms and condition{" "}
         <input type="checkbox" name="check" id="" />
       </p>
-      <button className={style.condBtn}>Creat Account</button>
+      <Link href="/dashboard">
+        <a>
+          <button className={style.condBtn}>Creat Account</button>
+        </a>
+      </Link>{" "}
     </div>
   );
 }

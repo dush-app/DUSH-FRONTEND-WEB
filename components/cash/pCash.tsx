@@ -4,6 +4,7 @@ import { BsArrowLeft } from "react-icons/bs";
 import { BiPhone } from "react-icons/bi";
 import { HiOutlineNewspaper } from "react-icons/hi";
 import {AiTwotoneHome } from 'react-icons/ai'
+import Link from "next/link";
 
 
 
@@ -11,7 +12,11 @@ const PCash = () => {
   return (
     <div className={style.pcash}>
       <div className={style.title}>
-        <BsArrowLeft className={style.tIcon} />
+        <Link href="/dashboard">
+          <a>
+            <BsArrowLeft className={style.tIcon} />
+          </a>
+        </Link>
         <p>PAYMENT</p>
       </div>
 

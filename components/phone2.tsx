@@ -1,5 +1,6 @@
 import React from "react";
 import style from "../styles/sign.module.css";
+import Link from "next/link";
 
 const Phone = () => {
   return (
@@ -14,9 +15,14 @@ const Phone = () => {
 
         <input type="text" placeholder="***********" />
       </div>
-
-      <button className={style.condBtn}>Creat Account</button>
-      <a href="/" className={style.atag}>Forget Password?</a>
+      <Link href="/dashboard">
+        <a>
+          <button className={style.condBtn}>Reset Password</button>
+        </a>
+      </Link>
+      <a href="/" className={style.atag}>
+        Forget Password?
+      </a>
     </div>
   );
 };

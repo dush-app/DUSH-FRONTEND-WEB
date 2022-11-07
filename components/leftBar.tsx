@@ -6,6 +6,7 @@ import { BiWallet } from "react-icons/bi";
 import { IoNotificationsOutline, IoSettingsOutline } from "react-icons/io5";
 import { GoSignOut } from "react-icons/go";
 import {GiHamburgerMenu } from 'react-icons/gi'
+import Link from "next/link";
 
 const LeftBar = () => {
   return (
@@ -38,7 +39,11 @@ const LeftBar = () => {
           <AiOutlineHistory className={style.icon} /> <span>History</span>
         </li>
         <li className={style.sign}>
-          <GoSignOut className={style.icon} /> <span>Sign Out</span>
+          <Link href="/">
+            <a>
+              <GoSignOut className={style.icon} /> <span>Sign Out</span>
+            </a>
+          </Link>
         </li>
       </ul>
     </div>

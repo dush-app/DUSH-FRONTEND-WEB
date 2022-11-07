@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import style from "../styles/sign.module.css";
 
@@ -29,7 +30,11 @@ const Email = () => {
         I accept all the terms and condition{" "}
         <input type="checkbox" name="check" id="" />
       </p>
-      <button className={style.condBtn}>Creat Account</button>
+      <Link href="/dashboard">
+        <a>
+          <button className={style.condBtn}>Creat Account</button>
+        </a>
+      </Link>
     </div>
   );
 };

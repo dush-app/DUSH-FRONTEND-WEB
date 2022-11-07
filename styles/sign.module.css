@@ -109,6 +109,7 @@
   color: #000000;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .atag{
     margin-top: 1em;

@@ -3,12 +3,17 @@ import style from "../../styles/dep.module.css";
 import { BsArrowLeft } from "react-icons/bs";
 import { IoMdArrowDropdownCircle } from "react-icons/io";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import Link from "next/link";
 
 const SCash = () => {
   return (
     <div className={style.dcash}>
       <div className={style.title}>
-        <BsArrowLeft className={style.tIcon} />
+        <Link href="/dashboard">
+          <a>
+            <BsArrowLeft className={style.tIcon} />
+          </a>
+        </Link>
 
         <p>Send</p>
       </div>
