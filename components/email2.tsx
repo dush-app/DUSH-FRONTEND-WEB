@@ -20,9 +20,9 @@ const Email = () => {
           <button className={style.condBtn}>Reset Password</button>
         </a>
       </Link>{" "}
-      <a href="/" className={style.atag}>
-        Forget Password?
-      </a>
+      <Link href="/">
+        <a className={style.atag}>Forget Password?</a>
+      </Link>
     </div>
   );
 };

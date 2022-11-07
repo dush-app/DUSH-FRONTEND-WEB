@@ -11,6 +11,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Pagination } from "swiper";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -53,11 +54,16 @@ const Home: NextPage = () => {
             <h2>Payment</h2>
           </SwiperSlide>
         </Swiper>
-        <a href="/signUp">
-          <button>Create free account</button>
-        </a>
+        <Link href="/signUp">
+          <a>
+            <button>Create free account</button>
+          </a>
+        </Link>
+
         <p>Already have an account?</p>
-        <a href="/signin">Sign In</a>
+        <Link href="/signin">
+          <a>Sign In</a>
+        </Link>
       </main>
     </div>
   );
