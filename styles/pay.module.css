@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 
 .main {
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,4 +229,109 @@
 /* Handle on hover */
 .amt::-webkit-scrollbar-thumb:hover {
   background: #ffffff;
+}
+
+@media (max-width: 1600px) {
+  .right {
+    width: 0;
+  }
+  .mid {
+    width: calc(100% - 600px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .mid {
+    width: calc(100% - 500px);
+  }
+  .left {
+    width: 500px;
+  }
+}
+
+@media (max-width: 950px) {
+  .left {
+    width: 400px;
+    padding: 3em 0 3em 0.4em;
+  }
+  .mid {
+    width: calc(100% - 400px);
+  }
+  .left h2 {
+    font-size: 25px;
+  }
+  .left h2 span {
+    font-size: 23px;
+  }
+  .left ul {
+    margin-top: 4em;
+  }
+
+  .left ul li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 804px) {
+  .left {
+    width: 100px;
+    background-color: #f5f5f5;
+  }
+  .left h2 {
+    display: none;
+  }
+  .left ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left ul li .icon {
+    font-size: 30px;
+  }
+  .left ul li span {
+    display: none;
+  }
+
+  .mid {
+    width: calc(100% - 100px);
+  }
+
+  .ham {
+    display: block;
+    position: absolute;
+    top: 5%;
+    font-size: 30px;
+  }
+
+
+}
+
+@media (max-width: 550px) {
+  .trans {
+    overflow-x: scroll;
+  }
+  .transCap {
+    min-width: 130px;
+  }
+  .transCap::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+.transCap::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Handle */
+.transCap::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 0;
+}
+
+/* Handle on hover */
+.transCap::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
 }
