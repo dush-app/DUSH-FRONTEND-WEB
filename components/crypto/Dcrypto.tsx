@@ -91,7 +91,7 @@ const Dcrypto = () => {
           <button className={style.lsBtn}>
             <AiOutlinePlus className={style.conCap} />
           </button>
-          <p>Deposite</p>
+          <p>Deposit</p>
         </div>
       </div>
     </div>

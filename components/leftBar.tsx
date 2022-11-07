@@ -27,7 +27,11 @@ const LeftBar = () => {
           <span>Navigation</span>
         </li>
         <li>
+          <Link href="/dashboard">
+            <a>
           <BiWallet className={style.icon} /> <span>Wallet</span>
+          </a>
+          </Link>
         </li>
         <li>
           <BsHouseDoor className={style.icon} /> <span>Invite friend</span>
@@ -39,7 +43,7 @@ const LeftBar = () => {
           <AiOutlineHistory className={style.icon} /> <span>History</span>
         </li>
         <li className={style.sign}>
-          <Link href="/">
+          <Link href="/signIn">
             <a>
               <GoSignOut className={style.icon} /> <span>Sign Out</span>
             </a>

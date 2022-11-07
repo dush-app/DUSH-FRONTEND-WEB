@@ -17,13 +17,16 @@ const Email = () => {
       </div>
       <Link href="/dashboard">
         <a>
-          <button className={style.condBtn}>Reset Password</button>
+          <button className={style.condBtn}>Log In</button>
         </a>
       </Link>{" "}
-      <Link href="/">
-        <a className={style.atag}>Forget Password?</a>
+      <Link href="/password">
+        <a>
+        <button className={style.atag}>Forget Password?</button>
+        </a>
       </Link>
     </div>
+
   );
 };
 

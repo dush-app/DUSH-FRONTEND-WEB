@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Dush</title>
         <meta name="description" content="Dush" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
 
       <main className={styles.main}>
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
         </Link>
 
         <p>Already have an account?</p>
-        <Link href="/signin">
+        <Link href="/signIn">
           <a>Sign In</a>
         </Link>
       </main>

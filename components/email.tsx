@@ -32,7 +32,7 @@ const Email = () => {
       </p>
       <Link href="/dashboard">
         <a>
-          <button className={style.condBtn}>Creat Account</button>
+          <button className={style.condBtn}>Create Account</button>
         </a>
       </Link>
     </div>
